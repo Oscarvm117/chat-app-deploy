@@ -2,7 +2,7 @@ services:
   # Backend
   backend:
     container_name: chat-backend
-    build: ./chat-web-backend
+    build: ./backend
     restart: always
     ports:
       - "3000:3000"
@@ -21,7 +21,7 @@ services:
   # Frontend
   frontend:
     container_name: chat-frontend
-    build: ./chat-web-frontend
+    build: ./frontend
     restart: always
     ports:
       - "5173:5173"
